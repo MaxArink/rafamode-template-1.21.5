@@ -11,10 +11,13 @@ import net.rafamode.RafaMode;
 
 public class ModItems {
 
-    public static  final Item RAFA = registerItem("rafa", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RafaMode.MOD_ID,"rafa")))));
+    public static  final Item RAFA = registerItem("rafa", new Item.Settings());
+    public static  final Item RAW_RAFA = registerItem("raw_rafa", new Item.Settings());
 
-    private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, Identifier.of(RafaMode.MOD_ID, name), item);
+    private static Item registerItem(String name, Item.Settings itemSettings){
+        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RafaMode.MOD_ID, name));
+        Item item = new Item(itemSettings.registryKey(key));
+        return Registry.register(Registries.ITEM, key, item);
     }
 
     public static void registerModItems(){
@@ -22,6 +25,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(RAFA);
+            entries.add(RAW_RAFA);
         });
+
     }
 }
