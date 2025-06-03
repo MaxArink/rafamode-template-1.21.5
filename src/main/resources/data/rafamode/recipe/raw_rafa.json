@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "catagory": "building",
+  "ingredients": [
+    "rafamode:raw_rafa_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "rafamode:raw_rafa"
+  }
+}

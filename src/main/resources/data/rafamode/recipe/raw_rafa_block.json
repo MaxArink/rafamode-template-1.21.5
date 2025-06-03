@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "rafa_block",
+  "key": {
+    "#": "rafamode:raw_rafa"
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "rafamode:raw_rafa_block"
+  }
+}

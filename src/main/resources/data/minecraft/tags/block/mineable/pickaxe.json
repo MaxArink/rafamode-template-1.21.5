@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "rafamode:rafa_block",
+    "rafamode:raw_rafa_block",
+    "rafamode:rafa_ore",
+    "rafamode:rafa_deepslate_ore",
+    "rafamond:magic_block"
+  ]
+}

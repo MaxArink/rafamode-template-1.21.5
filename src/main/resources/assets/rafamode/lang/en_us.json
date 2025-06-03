@@ -1,6 +1,15 @@
 {
   "item.rafamode.rafa": "Rafa",
   "item.rafamode.raw_rafa": "Raw Rafa",
-  "item.rafamode.rafa_block": "Rafa Block",
-  "item.rafamode.raw_rafa_block": "Raw Rafa Block"
+  "item.rafamode.chisel": "Chisel",
+
+  "block.rafamode.rafa_block": "Rafa Block",
+  "block.rafamode.raw_rafa_block": "Raw Rafa Block",
+  "block.rafamode.rafa_ore" : "Rafa Ore",
+  "block.rafamode.rafa_deepslate_ore": "Rafa Deepslate Ore",
+  "block.rafamode.magic_block": "Magic Block",
+
+  "itemgroup.rafamode.rafa_mode_items": "Rafa Mode Items",
+  "itemgroup.rafamode.rafa_mode_blocks": "Rafa Mode Blocks"
+
 }

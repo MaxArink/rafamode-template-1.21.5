@@ -8,16 +8,20 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.rafamode.RafaMode;
+import net.rafamode.item.custom.ChiselItem;
+
+import java.util.function.Function;
 
 public class ModItems {
 
-    public static  final Item RAFA = registerItem("rafa", new Item.Settings());
-    public static  final Item RAW_RAFA = registerItem("raw_rafa", new Item.Settings());
+    public static final Item RAFA = registerItem("rafa", Item::new);
+    public static final Item RAW_RAFA = registerItem("raw_rafa", Item::new);
 
-    private static Item registerItem(String name, Item.Settings itemSettings){
-        RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RafaMode.MOD_ID, name));
-        Item item = new Item(itemSettings.registryKey(key));
-        return Registry.register(Registries.ITEM, key, item);
+    public static final Item CHISEL = registerItem("chisel", setting -> new ChiselItem(setting.maxDamage(64)));
+
+    private static Item registerItem(String name, Function<Item.Settings, Item> function) {
+        return Registry.register(Registries.ITEM, Identifier.of(RafaMode.MOD_ID, name),
+                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(RafaMode.MOD_ID, name)))));
     }
 
     public static void registerModItems(){
