@@ -2,6 +2,7 @@ package net.rafamode;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.rafamode.block.ModBlocks;
 import net.rafamode.item.ModItemGroups;
 import net.rafamode.item.ModItems;
@@ -18,5 +19,9 @@ public class RafaMode implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
+
+		FuelRegistryEvents.BUILD.register((builder, context) -> {
+			builder.add(ModItems.STARLIGHT_ASHES, 60000);
+		});
 	}
 }

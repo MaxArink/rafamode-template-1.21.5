@@ -20,6 +20,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAFA);
                         entries.add(ModItems.RAW_RAFA);
                         entries.add(ModItems.CHISEL);
+                        entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.SINASRAFA);
+                        entries.add(ModItems.STARLIGHT_ASHES);
                     }).build());
 
     public static final ItemGroup RAFA_MODE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

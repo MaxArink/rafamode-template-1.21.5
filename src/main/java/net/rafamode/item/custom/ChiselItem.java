@@ -2,17 +2,24 @@ package net.rafamode.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.component.type.TooltipDisplayComponent;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Map;
+import java.util.function.Consumer;
 
 public class ChiselItem extends Item {
 
@@ -44,5 +51,20 @@ public class ChiselItem extends Item {
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, TooltipDisplayComponent displayComponent, Consumer<Text> textConsumer, TooltipType type) {
+        if(Screen.hasShiftDown()) {
+            textConsumer.accept(Text.translatable("tooltip.rafamode.chisel.shift_down"));
+        } else {
+            textConsumer.accept(Text.translatable("tooltip.rafamode.chisel"));
+        }
+
+//        if(stack.get(ModDataComponentTypes.COORDINATES) != null) {
+//            textConsumer.accept(Text.literal("Last Block Changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
+//        }
+
+        super.appendTooltip(stack, context, displayComponent, textConsumer, type);
     }
 }

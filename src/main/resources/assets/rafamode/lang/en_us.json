@@ -2,6 +2,9 @@
   "item.rafamode.rafa": "Rafa",
   "item.rafamode.raw_rafa": "Raw Rafa",
   "item.rafamode.chisel": "Chisel",
+  "item.rafamode.cauliflower": "Cauliflower",
+  "item.rafamode.sinasrafa": "Sinasrafa",
+  "item.rafamode.starlight_ashes": "Starlight Ashes",
 
   "block.rafamode.rafa_block": "Rafa Block",
   "block.rafamode.raw_rafa_block": "Raw Rafa Block",
@@ -10,6 +13,8 @@
   "block.rafamode.magic_block": "Magic Block",
 
   "itemgroup.rafamode.rafa_mode_items": "Rafa Mode Items",
-  "itemgroup.rafamode.rafa_mode_blocks": "Rafa Mode Blocks"
+  "itemgroup.rafamode.rafa_mode_blocks": "Rafa Mode Blocks",
 
+  "tooltip.rafamode.chisel.shift_down": "This item chisels blocks into Bricks!",
+  "tooltip.rafamode.chisel": "Press §eShift§r for more Information!"
 }
