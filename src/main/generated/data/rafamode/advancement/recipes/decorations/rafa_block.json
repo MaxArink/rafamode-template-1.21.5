@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rafa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "rafamode:rafa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rafa_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rafa"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rafa_block"
+    ]
+  }
+}

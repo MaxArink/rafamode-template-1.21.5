@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_rafa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "rafamode:raw_rafa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rafa_from_smelting_raw_rafa"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_rafa"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rafa_from_smelting_raw_rafa"
+    ]
+  }
+}

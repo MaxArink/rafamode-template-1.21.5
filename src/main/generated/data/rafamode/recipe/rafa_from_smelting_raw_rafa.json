@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "rafa",
+  "ingredient": "rafamode:raw_rafa",
+  "result": {
+    "id": "rafamode:rafa"
+  }
+}

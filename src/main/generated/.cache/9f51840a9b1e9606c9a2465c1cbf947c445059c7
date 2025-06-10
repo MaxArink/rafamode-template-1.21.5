@@ -1,0 +1,6 @@
+// 1.21.5	-999999999-01-01T00:00:00	RafaMode/Block Loot Tables
+6ab13dc700bf8de126714f79ab510eaf932e928b data/rafamode/loot_table/blocks/magic_block.json
+704356a7a4947557e0aac1220f4313419c944eb3 data/rafamode/loot_table/blocks/rafa_block.json
+764a38c6d64ea3639788ccd88e4ac7cdec96502c data/rafamode/loot_table/blocks/rafa_deepslate_ore.json
+02977f846f82064e21b3d74d70cc33a92a4b2c16 data/rafamode/loot_table/blocks/rafa_ore.json
+424c3a5cd5025e486068115bfd94c851ca2fcf8d data/rafamode/loot_table/blocks/raw_rafa_block.json

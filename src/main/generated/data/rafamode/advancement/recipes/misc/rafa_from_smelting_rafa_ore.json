@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rafa_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "rafamode:rafa_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:rafa_from_smelting_rafa_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rafa_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:rafa_from_smelting_rafa_ore"
+    ]
+  }
+}
