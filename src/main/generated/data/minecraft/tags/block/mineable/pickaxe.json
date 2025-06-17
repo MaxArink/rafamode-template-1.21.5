@@ -4,6 +4,10 @@
     "rafamode:rafa_block",
     "rafamode:raw_rafa_block",
     "rafamode:rafa_ore",
+    "rafamode:rafa_stairs",
+    "rafamode:rafa_slab",
+    "rafamode:rafa_button",
+    "rafamode:rafa_pressure_plate",
     "rafamode:rafa_deepslate_ore"
   ]
 }

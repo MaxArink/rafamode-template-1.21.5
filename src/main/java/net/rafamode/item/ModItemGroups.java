@@ -37,6 +37,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RAFA_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+
+                        entries.add(ModBlocks.RAFA_STAIRS);
+                        entries.add(ModBlocks.RAFA_SLAB);
+
+                        entries.add(ModBlocks.RAFA_BUTTON);
+                        entries.add(ModBlocks.RAFA_PRESSURE_PLATE);
+
                     }).build());
 
     public static void registerItemGroups(){

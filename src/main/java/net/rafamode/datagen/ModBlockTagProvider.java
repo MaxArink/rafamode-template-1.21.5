@@ -21,6 +21,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAFA_BLOCK)
                 .add(ModBlocks.RAW_RAFA_BLOCK)
                 .add(ModBlocks.RAFA_ORE)
+                .add(ModBlocks.RAFA_STAIRS)
+                .add(ModBlocks.RAFA_SLAB)
+                .add(ModBlocks.RAFA_BUTTON)
+                .add(ModBlocks.RAFA_PRESSURE_PLATE)
                 .add(ModBlocks.RAFA_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -28,6 +32,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_RAFA_BLOCK)
                 .add(ModBlocks.RAFA_ORE)
                 .add(ModBlocks.RAFA_DEEPSLATE_ORE)
+                .add(ModBlocks.RAFA_STAIRS)
+                .add(ModBlocks.RAFA_SLAB)
+                .add(ModBlocks.RAFA_BUTTON)
+                .add(ModBlocks.RAFA_PRESSURE_PLATE)
                 .add(ModBlocks.MAGIC_BLOCK);
 
     }

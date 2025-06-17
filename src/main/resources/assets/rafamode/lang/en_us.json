@@ -11,6 +11,10 @@
   "block.rafamode.rafa_ore" : "Rafa Ore",
   "block.rafamode.rafa_deepslate_ore": "Rafa Deepslate Ore",
   "block.rafamode.magic_block": "Magic Block",
+  "block.rafamode.rafa_stairs": "Rafa Stairs",
+  "block.rafamode.rafa_slab": "Rafa Slab",
+  "block.rafamode.rafa_button" : "Rafa Button",
+  "block.rafamode.rafa_pressure_plate": "Rafa Pressure Plate",
 
   "itemgroup.rafamode.rafa_mode_items": "Rafa Mode Items",
   "itemgroup.rafamode.rafa_mode_blocks": "Rafa Mode Blocks",

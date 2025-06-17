@@ -1,9 +1,7 @@
 package net.rafamode.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -38,7 +36,20 @@ public class ModBlocks {
                     properties.strength(20f, 1000f).requiresTool()));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            properties -> new MagicBlock(properties.strength(3f, 1f).requiresTool()));
+            properties -> new MagicBlock(properties.strength(10000f, 1000f).requiresTool()));
+
+    public static final Block RAFA_STAIRS = registerBlock("rafa_stairs",
+            properties -> new StairsBlock(ModBlocks.RAFA_BLOCK.getDefaultState(),
+                    properties.strength(100f).requiresTool()));
+
+    public static final Block RAFA_SLAB = registerBlock("rafa_slab",
+            properties -> new SlabBlock(properties.strength(100f).requiresTool()));
+
+    public static final Block RAFA_BUTTON = registerBlock("rafa_button",
+            properties -> new ButtonBlock(BlockSetType.IRON, 2,properties.strength(100f).requiresTool().noCollision()));
+
+    public static final Block RAFA_PRESSURE_PLATE = registerBlock("rafa_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.IRON,properties.strength(100f).requiresTool()));
 
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
@@ -66,6 +77,10 @@ public class ModBlocks {
             entries.add(ModBlocks.RAW_RAFA_BLOCK);
             entries.add(ModBlocks.RAFA_ORE);
             entries.add(ModBlocks.RAFA_DEEPSLATE_ORE);
+            entries.add(ModBlocks.RAFA_STAIRS);
+            entries.add(ModBlocks.RAFA_SLAB);
+            entries.add(ModBlocks.RAFA_PRESSURE_PLATE);
+            entries.add(ModBlocks.RAFA_BUTTON);
         });
     }
 
